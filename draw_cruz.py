@@ -1,0 +1,18 @@
+import turtle
+w = turtle.Screen()
+t = turtle.Turtle()
+t.pensize(5)
+t.goto(100,0)
+t.goto(100,100)
+t.goto(0,100)
+t.goto(0,200)
+t.goto(-100,200)
+t.goto(-100,100)
+t.goto(-200,100)
+t.goto(-200,0)
+t.goto(-100,0)
+t.goto(-100,-100)
+t.goto(0,-100)
+t.goto(0,0)
+
+turtle.done()
