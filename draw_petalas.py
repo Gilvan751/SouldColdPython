@@ -45,4 +45,9 @@ ws.begin_fill()
 flower1(ws, 13, 60.0, 40.0)
 ws.end_fill()
 
+ws.color('yellow')
+move(ws, -400)
+flower1(ws, 8, 70, 100)
+ws.end_fill()
+
 tur.mainloop()
