@@ -34,7 +34,7 @@ t2.goto(-160, 70)
 t2.pd
 
 t3 = Turtle()
-t3.color('yellow')
+t3.color('tomato')
 t3.shape('turtle')
 t3.up()
 t3.goto(-160, 40)
@@ -55,11 +55,17 @@ t5.goto(-160, -20)
 t5.pd
 
 for turn in range(100):
+    
     t1.fd(randint(1,5))
+    t1.pd()
     t2.fd(randint(1,5))
+    t2.pd()
     t3.fd(randint(1,5))
+    t3.pd()
     t4.fd(randint(1,5))
+    t4.pd()
     t5.fd(randint(1,5))
+    t5.pd()
 
 
 turtle.done()
