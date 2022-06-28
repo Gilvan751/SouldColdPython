@@ -1,5 +1,6 @@
 from turtle import *
 import turtle
+from random import randint
 
 painting = turtle.Turtle()
 
@@ -7,29 +8,37 @@ painting.pencolor("red")
 painting.speed(0)
 
 
-for x in range(60):
-    painting.forward(60)
-    painting.left(133)
-painting.up()
-painting.pencolor("blue")
-painting.goto(100,100)
-painting.pd()
-for x in range(60):
-    painting.forward(100)
-    painting.left(153)
-painting.up()
-painting.pencolor("orange")
-painting.goto(-50,100)
-painting.pd()
-for x in range(60):
-    painting.forward(70)
-    painting.left(153)
-painting.up()
-painting.pencolor("red")
-painting.goto(-250,50)
-painting.pd()
-for x in range(60):
-    painting.forward(90)
-    painting.left(153)
+def estrela():
+    for i in range(60):
+      
+        painting.forward(90)
+        painting.left(153)
+
+
+def passo(color, goto):
+    painting.up()
+    painting.pencolor(color)
+    painting.goto(goto)
+    painting.pd()
+        
+passo('red',  (200,100))
+estrela()
+
+passo('blue', (150,100))
+estrela()
+
+passo('orange', (-50,100))
+estrela()
+
+passo('red', (-250,50))
+estrela()
+
+passo('green',(-250,-50))
+estrela()
+
+passo('green', (-100,-100))
+
+estrela()
+
 
 turtle.done()
